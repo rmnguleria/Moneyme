@@ -1,5 +1,4 @@
 #Moneyme
-#=======
 
 ##Android App for Managing Expenses - Android 4.4.2 Min SDK
 
