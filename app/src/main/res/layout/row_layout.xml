@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="90px"
-        android:layout_height="90px"
-        android:layout_marginLeft="4px"
-        android:layout_marginRight="10px"
-        android:layout_marginTop="4px"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/ic_launcher" >
     </ImageView>
 
     <TextView
-        android:id="@+id/Upper"
+        android:id="@+id/Category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:textSize="40px"
+        android:textSize="24dp"
+        android:layout_toRightOf="@+id/icon"
         android:textStyle="bold"
         >
     </TextView>
     <TextView
-        android:id="@+id/Lower"
-        android:layout_weight="4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30px"/>
-</LinearLayout>
+        android:id="@+id/Description"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/Category"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Spend"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/Category"
+        />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_toRightOf="@+id/Spend"
+        android:layout_below="@+id/Category"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"/>
+</RelativeLayout>

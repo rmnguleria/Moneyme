@@ -35,7 +35,13 @@ public class CustomArrayAdapter extends ArrayAdapter<ExpenseObject> {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.row_layout, parent, false);
 
-        TextView upperView = (TextView) rowView.findViewById(R.id.Upper);
+        TextView categoryView = (TextView) rowView.findViewById(R.id.Category);
+
+        TextView descrView = (TextView)rowView.findViewById(R.id.Description);
+
+        TextView spendView = (TextView)rowView.findViewById(R.id.Spend);
+
+        TextView dateView = (TextView)rowView.findViewById(R.id.Date);
 
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
 
@@ -45,11 +51,15 @@ public class CustomArrayAdapter extends ArrayAdapter<ExpenseObject> {
             imageView.setImageResource(R.drawable.ic_launcher);
         }
 
-        upperView.setText("Expenditure" + values[position].category + ":" + values[position].notes);
+        categoryView.setText(values[position].category);
 
-        TextView lowerView = (TextView) rowView.findViewById(R.id.Lower);
+        descrView.setText(values[position].notes);
+
+        spendView.setText(String.valueOf(values[position].spendMoney));
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+
 
         try {
             Date date = dateFormat.parse(values[position].current_Date);
@@ -61,7 +71,7 @@ public class CustomArrayAdapter extends ArrayAdapter<ExpenseObject> {
 
             int dayMonth = cal.get(Calendar.DAY_OF_MONTH);
 
-            lowerView.setText("Expenditure" + values[position].spendMoney + Week[day - 1] + " " + dayMonth);
+            dateView.setText(Week[day - 1] + " " + dayMonth);
 
         } catch (ParseException ex) {
             ex.printStackTrace();
