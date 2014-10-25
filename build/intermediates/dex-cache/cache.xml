@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/raman/Downloads/Moneyme/app/build/intermediates/pre-dexed/debug/sqliteassethelper-2.0.1-dd36809727456c1f9ef3edcb8f35cad548f53255.jar"
+        jar="/home/raman/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.sqliteasset/sqliteassethelper/2.0.1/d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f/sqliteassethelper-2.0.1.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f"/>
+
+</pre-dex-items>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:contentDescription="@string/icon_here"
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_toEndOf="@+id/icon"
+        android:textStyle="bold"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Description"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/Category"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Spend"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_below="@+id/Category"
+        />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_toEndOf="@+id/Spend"
+        android:layout_below="@+id/Category"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+</RelativeLayout><!-- From: file:/home/raman/Downloads/Moneyme/app/src/main/res/layout/row_layout.xml -->

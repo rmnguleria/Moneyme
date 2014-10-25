@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/home/raman/Downloads/Moneyme/app/src/main/assets" >
+            <file
+                name="databases/money_data.sqlite"
+                path="/home/raman/Downloads/Moneyme/app/src/main/assets/databases/money_data.sqlite" />
+            <file
+                name="databases/money_data.sqlite_upgrade_1-2.sql"
+                path="/home/raman/Downloads/Moneyme/app/src/main/assets/databases/money_data.sqlite_upgrade_1-2.sql" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/raman/Downloads/Moneyme/app/src/debug/assets" />
+    </dataSet>
+
+</merger>
