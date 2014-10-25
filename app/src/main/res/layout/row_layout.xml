@@ -5,11 +5,12 @@
     >
 
     <ImageView
+        android:contentDescription="@string/icon_here"
         android:id="@+id/icon"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="4dp"
         android:src="@drawable/ic_launcher" >
     </ImageView>
@@ -18,8 +19,8 @@
         android:id="@+id/Category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/icon"
+        android:textSize="24sp"
+        android:layout_toEndOf="@+id/icon"
         android:textStyle="bold"
         >
     </TextView>
@@ -28,23 +29,23 @@
         android:layout_height="wrap_content"
         android:id="@+id/Description"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/Category"/>
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/Category"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Spend"
-        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon"
         android:layout_below="@+id/Category"
         />
 
     <TextView
         android:id="@+id/Date"
-        android:layout_toRightOf="@+id/Spend"
+        android:layout_toEndOf="@+id/Spend"
         android:layout_below="@+id/Category"
         android:layout_width="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_height="wrap_content"
-        android:textSize="15dp"/>
+        android:textSize="15sp"/>
 </RelativeLayout>
